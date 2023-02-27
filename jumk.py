@@ -1,7 +1,6 @@
 
 #add_book,del_book,show_books,mark_as_read
 books=[]
-supple=[]
 def create_file():
     with open ("storage.txt",'r') as file:
         pass
@@ -23,7 +22,7 @@ def show_books():
 def del_book(book):
          books=show_books()
          for bookk in books:
-            if bookk!=book:
+            if bookk[0]!=book:
                 supple.append(bookk)
          _save_all(supple)
 def mark_as_read(booka):

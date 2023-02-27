@@ -7,7 +7,7 @@ def menu():
            book,author=input("enter names of book and author::::").split()
            jumk.add_book(book,author)
         elif case=='d':
-              book=input("please enter the name of the book")
+              book=input("please enter the name of the book::::")
               jumk.del_book(book)
 
         elif(case=='s'):
@@ -15,7 +15,7 @@ def menu():
                print(x)
 
         elif(case=='r'):
-                book=input("what book have ypu completed reading??")
+                book=input("what book have ypu completed reading????")
                 jumk.mark_as_read(book)
         case=input("enter a or d or s or r::::")
 menu()
