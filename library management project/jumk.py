@@ -20,6 +20,7 @@ def show_books():
         lines=[line.strip().split(',') for line in file.readlines()]
         return(lines)
 def del_book(book):
+         supple=list()
          books=show_books()
          for bookk in books:
             if bookk[0]!=book:
