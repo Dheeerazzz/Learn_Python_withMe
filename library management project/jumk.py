@@ -2,7 +2,7 @@
 #add_book,del_book,show_books,mark_as_read
 books=[]
 def create_file():
-    with open ("storage.txt",'r') as file:
+    with open ("storage.txt",'r') as file:  
         pass
 
 def add_book(book,author):

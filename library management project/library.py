@@ -5,13 +5,15 @@ def menu():
    a--to add a new book
    d--to delete a new book
    s--to show all available books
-   r--to mark any book as read\n''')
+   r--to mark any book as read\n
+   now enter your value:::''')
    while case!="q":
         if case=="a":
-           book,author=input("enter names of book and author::::").split()
+           book=input("enter the name of the book:::")
+           author=input("enter the name of the author:::")
            jumk.add_book(book,author)
         elif case=='d':
-              book=input("please enter the name of the book:.::")
+              book=input("enter the name of the book:::")
               jumk.del_book(book)
 
         elif(case=='s'):
